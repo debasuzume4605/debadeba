@@ -1,0 +1,1333 @@
+@charset "utf-8";
+
+.page1 {
+
+body {
+    background-image: url(../../../Downloads/kyuusityu.png);
+    background-size: contain;  /* 画面内に収める */
+    /*background-repeat: no-repeat;  繰り返しを防ぐ 
+    background-position: center;  画像を中央に配置 */
+}
+
+
+header {
+    background-image: url(kyuusityu.png);
+}
+
+.container {   /*containerは横になにかを置きたい際にするもの*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+#debaWEB {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: MS Sans Serif, cursive;
+    border-radius: 20px;
+    display: flex; /*横並びにする*/
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center; /*横の真ん中に置く設定*/
+    text-align: center; /*中のテキストを横方向にそろえる*/
+    margin: 0px 5% 0px 0px;
+}
+
+.katudou {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border-radius: 20px;
+    width: 1000px;
+    height: 100px;
+    display: flex; /*横並びにする*/
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center; /*横の真ん中に置く設定*/
+    text-align: center; /*中のテキストを横方向にそろえる*/
+    margin: 0px 20% 0px 0px;
+    text-decoration: none;
+
+    transition: transform 0.3s ease;
+}
+
+.katudou:hover {
+    transform: scale(1.1);
+    color: aqua;
+}
+
+
+
+
+/*.content-section {
+    transition: transform 0.5s ease;
+}
+.content-section :hover {
+    transform: translateX(100%);
+}
+
+/*マウスポインタでアイコンをタップすると文字が表示されるようにする*/
+
+.本日の動画 {
+    /*color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;*/
+
+    width: 300px;
+    height: 300px;
+    background-color: rgb(77, 110, 255);
+    border-radius: 20%;
+
+    /*display: flex; /*横並びにする*/
+    /*align-items: center; /*縦の真ん中に置く設定*/
+    /*justify-content: center; /*横の真ん中に置く設定*/
+    /*text-align: center; /*中のテキストを横方向にそろえる*/
+    /*padding: 10px; /*中身の周りに10pxの余白を作成*/
+
+    background-image: url(../素材/deba-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    
+    /*position: relative; /*吹き出しの位置に文字を配置する為に絶対必要*/
+    transition: transform 0.3s ease;
+}
+}
+.本日の動画:hover {
+    transform: scale(1.1);
+}
+.本日の動画::after {
+    content: "本日の動画"; /*表示する文字*/
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(77, 110, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.活動SNS {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+
+    width: 200px;
+    height: 200px;
+    background-color: rgb(252, 255, 77);
+    border-radius: 20%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;*/
+
+    background-image: url(../素材/でば５-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.活動SNS:hover {
+    transform: scale(1.1);
+}
+.活動SNS::after {
+    content: "活動SNS"; /*表示する文字*/
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(252, 255, 77);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+
+.人気の動画 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 20%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;*/
+
+    background-image: url(../素材/でば６-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.人気の動画:hover {
+    transform: scale(1.1);
+}
+.人気の動画::after {
+    content: "人気の動画";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 0, 0);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.どんな人 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+
+    width: 250px;
+    height: 250px;
+    background-color: rgb(206, 69, 224);
+    border-radius: 20%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;*/
+
+    background-image: url(../素材/S__6119533-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    
+    transition: transform 0.3s ease;
+}
+
+.どんな人:hover {
+    transform: scale(1.1);
+}
+.どんな人::after {
+    content: "どんな人";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(206, 69, 224);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.今日のコメント {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(105, 224, 69);
+    border-radius: 20%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;*/
+
+    background-image: url(../素材/S__6119535-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.今日のコメント:hover {
+    transform: scale(1.1);
+}
+.今日のコメント::after {
+    content: "今日のコメント";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(105, 224, 69);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.今は何している？ {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+
+    width: 150px;
+    height: 150px;
+    background-color: rgb(226, 173, 103);
+    border-radius: 20%;
+
+    background-image: url(../素材/S__2621455-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.今は何している？:hover {
+    transform: scale(1.1);
+}
+.今は何している？::after {
+    content: "今は何している？";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(226, 173, 103);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+
+.お願い事 {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+
+    width: 150px;
+    height: 150px;
+    background-color: rgb(103, 222, 226);
+    border-radius: 20%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;*/
+
+    background-image: url(../素材/でば４-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.お願い事:hover {
+    transform: scale(1.1);
+}
+.お願い事::after {
+    content: "お願い事";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(103, 222, 226);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+/*
+.liketext {
+    background-color: rgb(142, 152, 248);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 1000px;
+    height: 100px;
+    display: flex; /*横並びにする
+    align-items: center; /*縦の真ん中に置く設定
+    justify-content: center; /*横の真ん中に置く設定
+    text-align: center; /*中のテキストを横方向にそろえる
+    margin: 0px 300px 0px 25%;
+}
+
+.好きなコメント {
+    background-color: hsl(100, 100%, 80%);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex; /*横並びにする*/
+    /*align-items: center; /*縦の真ん中に置く設定
+    justify-content: center; /*横の真ん中に置く設定
+    text-align: center; /*中のテキストを横方向にそろえる
+}
+
+.好きなコメント1 {
+    background-color: hsl(0, 100%, 80%);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex; /*横並びにする
+    align-items: center; /*縦の真ん中に置く設定
+    justify-content: center; /*横の真ん中に置く設定
+    text-align: center; /*中のテキストを横方向にそろえる
+}
+
+.好きなコメント2 {
+    background-color: hsl(300, 100%, 80%);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex; /*横並びにする
+    align-items: center; /*縦の真ん中に置く設定
+    justify-content: center; /*横の真ん中に置く設定
+    text-align: center; /*中のテキストを横方向にそろえる
+}
+
+.好きなコメント3 {
+    background-color: rgb(100, 123, 255);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.好きなコメント4 {
+    background-color: rgb(255, 239, 100);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.好きなコメント5 {
+    background-color: cyan;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}*/
+
+.LINEスタンプ販売中 {
+    background-color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+
+    transition: transform 0.3s ease;
+}
+.LINEスタンプ販売中:hover {
+    color: hsl(103, 100%, 50%);
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.3);
+}
+/*文字を書いたら送信ボタンが出現そしてマウスを合わせると色と大きさが変更するコード*/
+
+.お問い合わせ {
+    background-color: black;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+
+button {
+    background-color: #00ff08; /* ボタンの背景色 */
+    color: white; /* ボタンの文字色 */
+    border: none; /* ボタンの枠線を消す */
+    padding: 10px 20px; /* ボタンのパディング */
+    text-align: center; /* テキストの中央揃え */
+    text-decoration: none; /* テキスト装飾を消す */
+    display: inline-block; /* 横並びにする */
+    font-size: 16px; /* フォントサイズ */
+    cursor: pointer; /* カーソルを指に変更 */
+    border-radius: 5px; /* ボタンに角丸を付ける */
+}
+
+button:hover {
+    background-color: #ffe600; /* ボタンをホバーしたときの色 */
+    scale: 1.1;
+}
+
+
+
+
+
+
+.記入するもの {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    justify-items: center;
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center;/*横の真ん中に置く設定*/
+    display: flex;
+    margin: 0px 35% 0px 35%;
+}
+input {
+    width: 500px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 0px 0px 37%;
+}
+
+/*画像を挿入*/
+.ikemenn,
+.okasii,
+.muridekusa,
+.ha,
+.ohayou {
+    width: 300px;
+    height: 300px;
+}
+
+.イケメン,
+.？？？？？,
+.無理で草,
+.は？,
+.おはよう {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+button :hover {
+    transform: scale(1.1);
+}
+
+
+.mazi,
+.zyaane,
+.konnbannha,
+.oyasumi,
+.nann {
+    width: 300px;
+    height: 300px;
+}
+
+.まじ？,
+.じゃあね！,
+.こんばんは,
+.おやすみ～,
+.なん？ {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.otoiawase,
+.Input-wrapper,
+.text,
+.adana,
+.nennrei {
+    background-color: rgb(255, 253, 110);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 450px 0px 450px;
+}
+
+.naiyoukinyuu {
+    background-color: rgb(255, 253, 110);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 450px 0px 450px;
+}
+
+.submit-botton {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 450px 0px 450px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.page2 {
+    background-image: url(../../../Downloads/kyuusityu.png);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.katudoupage2 {
+    background-color: rgba(0, 47, 255, 0.973);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.debaWEB {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center; /*中のテキストを横方向にそろえる*/
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.container {   /*containerは横になにかを置きたい際にするもの*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.ninnki1 {
+
+    /*background-color＆colorが上手く作動しない問題を早く直す*/
+
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-image: url(../../../Downloads/でば６-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+.ninnki1:hover {
+    transform: scale(1.1);
+}
+.ninnki1::after {
+    content: "人気の動画";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 0, 0);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.honnzitunodouga {
+
+    background-color: rgb(4, 0, 255);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-image: url(../../../Downloads/deba-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+.honnzitunodouga:hover {
+    transform: scale(1.1);
+}
+.honnzitunodouga::after {
+    content: "本日の動画";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(4, 0, 255);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.katudou2 {
+    background-color: rgb(238, 255, 0);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-image: url(../素材/でば５-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+.katudou2:hover {
+    transform: scale(1.1);
+}
+.katudou2::after {
+    content: "活動SNS";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(238, 255, 0);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.donnnahito2 {
+    background-color: rgb(162, 0, 255);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-image: url(../素材/S__6119533-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+.donnnahito2:hover {
+    transform: scale(1.1);
+}
+.donnnahito2::after {
+    content: "どんな人";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(162, 0, 255);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.imaha2 {
+    background-color: rgb(255, 199, 94);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-image: url(../素材/S__2621455-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+.imaha2:hover {
+    transform: scale(1.1)
+}
+.imaha2::after {
+    content: "今は何している？";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 199, 94);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.kyounokomennto2 {
+    background-color: rgb(43, 255, 0);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-image: url(../素材/S__6119535-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+.kyounokomennto2:hover {
+    transform: scale(1.1);
+}
+.kyounokomennto2::after {
+    content: "今日のコメント";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(43, 255, 0);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.onegai2 {
+    background-color: rgb(0, 238, 255);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-image: url(../素材/でば４-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+.onegai2:hover {
+    transform: scale(1.1);
+}
+.onegai2::after {
+    content: "お願い事";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(0, 238, 255);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.modoru2 {
+    background-color: rgb(17, 0, 255);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-image: url(../../../Downloads/44DDFA58-6B73-4C23-9BC5-3D38BCA90DF5-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+.modoru2:hover {
+    transform: scale(1.1);
+}
+.modoru2::after {
+    content: "最初のページに戻る";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(17, 0, 255);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+.page3 {
+    background-image: url(../../../Downloads/kyuusityu.png);
+}
+
+.debaWEB {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center; /*中のテキストを横方向にそろえる*/
+}
+
+.douga {
+    background-color: rgb(4, 0, 255);
+    color: rgb(255, 255, 255);
+    display: flex; /*横並びにする*/
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center; /*横の真ん中に置く設定*/
+    text-align: center; /*中のテキストを横方向にそろえる*/
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+/*3(本日の動画)はコード終了したから次のページから書く*/
+
+/*-------------------------------------------------------------------------------------------*/
+
+.page4 {
+    background-image: url(../../../Downloads/kyuusityu.png);
+}
+
+.debaWEB {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.ninnki {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 800px;
+    height: 100px;
+    display: flex; /*横並びにする*/
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center; /*横の真ん中に置く設定*/
+    text-align: center; /*中のテキストを横方向にそろえる*/
+    margin: 0px 0px 0px 28%;
+}
+
+.ninnkinodouga {
+    background-color: rgb(0, 17, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rakki {
+    margin: 10px 42% 10px 42%;
+}
+
+.kaisetu {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 800px;
+    height: 100px;
+    display: flex; /*横並びにする*/
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center; /*横の真ん中に置く設定*/
+    text-align: center; /*中のテキストを横方向にそろえる*/
+    margin: 0px 0px 0px 28%;
+}
+
+.eto {
+    margin: 10px 42% 10px 42%;
+}
+
+.taisenn {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 800px;
+    height: 100px;
+    display: flex; /*横並びにする*/
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center; /*横の真ん中に置く設定*/
+    text-align: center; /*中のテキストを横方向にそろえる*/
+    margin: 0px 0px 0px 28%;
+}
+
+.senntou {
+    margin: 10px 42% 10px 42%;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.page5 {
+    background-image: url(../../../Downloads/kyuusityu.png);
+}
+
+.setumei {
+    background-color: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-weight: bold;
+    width: 800px;
+    height: 300px;
+    text-align: center;
+    margin: 0px 0px 0px 28%;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.page6 {
+    background-image: url(../../../Downloads/kyuusityu.png);
+}
+
+.katudou6 {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.katudou66 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Youtube {
+    width: 500px;
+    height: 700px;
+}
+.sabu,
+.honn {
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+.Xhonnaka {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+
+    background-image: url(../素材/S__2621455-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.Xhonnaka:hover {
+    transform: scale(1.1);
+}
+.Xhonnaka::after {
+    content: "X本垢";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+
+
+
+
+
+.Youtubeaka {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+
+    background-image: url(../素材/S__2621455-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.Youtubeaka:hover {
+    transform: scale(1.1);
+}
+.Youtubeaka::after {
+    content: "Youtube垢";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+
+
+
+.Xsabuaka {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+
+    background-image: url(../素材/でば４-removebg-preview.png);
+    background-size: cover; /*画像を収めるもの*/
+    background-position: center; /*画像を中央に*/
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.Xsabuaka:hover {
+    transform: scale(1.1);
+}
+.Xsabuaka::after {
+    content: "Xサブ垢";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+/*重要【今までのページで戻るなどの所が全て入ってない可能性あり*/
+
+/*そこを治すのが12月3日まで、全て終わらす*/
+
+
+/*pageごとにclassが同じでもCSSでは反応する*/
+
+/*-----------------------------------------------------------------------------*/
+
+.page7 {
+    background-image: url(../../../Downloads/kyuusityu.png);
+}
+
+.debaWEB {
+    background-color: black;
+    color: aliceblue;
+}
+
+.komennto {
+    color: rgb(0, 0, 0);
+    background-color: rgb(43, 255, 0);
+    font-size: 40px;
+    font-weight: bold;
+    display: flex; /*横並びにする*/
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center; /*横の真ん中に置く設定*/
+    text-align: center; /*中のテキストを横方向にそろえる*/
+}
+
+.naiyou {
+    background-color: rgb(129, 233, 247);
+    width: 800px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex; /*横並びにする*/
+    align-items: center; /*縦の真ん中に置く設定*/
+    justify-content: center; /*横の真ん中に置く設定*/
+    text-align: center; /*中のテキストを横方向にそろえる*/
+    margin: 0px 0px 0px 28%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+.page8 {
+    background-image: url(../../../Downloads/kyuusityu.png);
+}
+
+.onegai {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+.imaha {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+.page9 {
+    background-image: url(../../../Downloads/kyuusityu.png);
+}
+
+.gennzai {
+    background-color: rgb(255, 0, 0);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+.setumei1 {
+    background-color: rgb(184, 201, 209);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
